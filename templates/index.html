@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% import 'componentes/nav.html' as nav %}
+
+{% block title %}Pagina Principal{% endblock %}
+
+{% block nav %}
+    {% set nav_items = [
+        {"name": "Home", "url": "/"},
+        {"name": "About", "url": "/about"},
+        {"name": "Contact", "url": "/contact"}
+    ] %}
+    {{ nav.render_nav(items=nav_items, active_route=active_route) }}
+{% endblock %}
+
+{% block content %}
+    
+{% endblock %}

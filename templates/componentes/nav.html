@@ -1,0 +1,12 @@
+{% macro render_nav(items, active_route ) %}
+<nav>
+    <ul>
+        {% for item in items %}
+            <li class="{% if item.url == active_route %}active{% else %}inactive{% endif %}">
+                <a href="{{ item.url }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
+{% endmacro %}
+
