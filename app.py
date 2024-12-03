@@ -21,6 +21,10 @@ def about():
 def contact():
     return render_template('index.html', proyecto=proyecto, active_route='/contact')
 
+@app.route('/test')
+def test():
+    return render_template('test.html',proyecto=proyecto, active_route='/contact')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
