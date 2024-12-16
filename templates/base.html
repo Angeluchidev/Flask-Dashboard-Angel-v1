@@ -16,15 +16,15 @@
 </head>
 <body class="base grid grid-cols-12 gap-2 p-2 h-[100vh]">
     <!-- Navigation Menu -->
-    <nav class="nav col-span-12 bg-color-promario text-white p-4 flex justify-between items-center h-[10vh]">
+    <nav class="nav col-span-12 text-white p-4 flex justify-between items-center h-[10vh]">
         <div class="flex justify-start items-center gap-2">
-            <div class="flex justify-center items-center w-20 h-20 bg-color-secundario rounded-full"><h1>logo</h1></div>
+            <div class="flex justify-center items-center w-20 h-20 bg-blue-950 rounded-full"><h1>logo</h1></div>
             <h1>{{datos.sistema}}</h1>
         </div>
         <div class="flex justify-end items-center gap-2">
-            <h6>{{datos.usuario}}</h6>
+            <h3>{{datos.usuario}}</h3>
             <img class="rounded-full hidden md:block w-14" bg-black src="/static/img/perfil.jpg" alt="">
-            <button class="md:hidden text-white" onclick="toggleSidebar()">☰</button> <!-- Hamburger button -->
+            <button class="md:hidden text-blue-50" onclick="toggleSidebar()">☰</button> <!-- Hamburger button -->
         </div>
     </nav>
 
@@ -36,14 +36,15 @@
     </aside>
 
     <!-- Mobile Sidebar -->
-    <aside id="mobile-sidebar" class="fixed inset-y-0 right-0 w-64 bg-gray-200 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"">
-       <div class="bg-color-primario p-4 text-white">
+    <aside id="mobile-sidebar" class="fixed inset-y-0 right-0 w-64 bg-blue-950 text-blue-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"">
+       <div class="bg-blue-900 p-4 text-blue-50">
         <div class="flex justify-between items-start mb-4"> <!-- Flex container for the close button -->
             <img class="rounded-full w-[30%]" bg-black src="/static/img/perfil.jpg" alt="">
             <button class="text-right" onclick="toggleSidebar()">✖</button> <!-- Close button -->
         </div>
         <div class="flex justify-between items-center mb-4"> <!-- Flex container for the close button -->
-            <h2>{{datos.usuario}}</h2>
+            
+            <h3>{{datos.usuario}}</h3>
         </div>
        </div>
        <div class="p-4">

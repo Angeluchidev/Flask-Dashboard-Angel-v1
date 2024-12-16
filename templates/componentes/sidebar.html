@@ -4,7 +4,7 @@
     <ul class="mt-2">
         {% for item in sidebar_items %}
             <li class="my-2">
-                <a href="{{ item.url }}" class="{% if item.url == active_route %}text-blue-600 font-semibold{% else %}text-gray-800{% endif %}">
+                <a href="{{ item.url }}" class="{% if item.url == active_route %}text-blue-800 font-semibold{% else %}text-blue-50{% endif %}">
                     {{ item.name }}
                 </a>
             </li>

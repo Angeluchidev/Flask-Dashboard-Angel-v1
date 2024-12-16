@@ -5,18 +5,21 @@
 @layer components {
    
    .base {
-      @apply bg-color-base;
+      @apply bg-blue-100;
    }
    .nav {
-      @apply bg-color-primario text-white font-bold py-2 px-4 rounded;
+      @apply bg-blue-900 text-blue-950 font-bold py-2 px-4 rounded;
    }
 
    .aside {
-      @apply bg-color-secundario text-white font-bold py-2 px-4 rounded;
+      @apply bg-blue-950 text-blue-50 py-2 px-4 rounded;
    }
 
    .content {
-      @apply bg-color-tres text-white font-bold py-2 px-4 rounded;
+      @apply bg-blue-50 text-blue-950 py-2 px-4 rounded;
+   }
+
+   h3 {
+      @apply text-blue-50 font-bold text-xs;
    }
 }
-

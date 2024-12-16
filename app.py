@@ -3,7 +3,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 datos = {
-  "sistema": "DASA-TEMPLATE",
+  "sistema": "ANGEL-TEMPLATE",
   "usuario": "Angel Briceño",
   "perfil": "Administrador",
   "imagen":"perfil.jpg"
